@@ -1,5 +1,3 @@
-# Sumar
-Schelet pentru proiectele Web din Academie 2024.
 # Baza de date
 Sql Server 2019
 ## Tabele de Baza
