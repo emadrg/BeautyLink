@@ -1,0 +1,210 @@
+// *************************************************** Box size
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// *************************************************** Root
+
+:root {
+  --font-family-base: "Open Sans", sans-serif;
+  --font-family-brand: "Quicksand", sans-serif;
+  --color-base: #1c2224;
+  --color-main: #e3c3d2;
+  --color-main-dark: #db79a7;
+  --color-main-alt: #b05f85;
+  --fc-today-bg-color: #faf0f5;
+
+  --fc-button-bg-color: #b05f85;
+  --fc-button-border-color: #b05f85;
+  --fc-button-hover-bg-color: #b05f85;
+  --fc-button-hover-border-color: #b05f85;
+  --fc-button-active-bg-color: #b05f85;
+  --fc-button-active-border-color: #b05f85;
+}
+
+// *************************************************** Base
+
+html {
+  height: 100%;
+  font-size: 16px;
+  font-optical-sizing: auto;
+}
+
+body {
+  height: 100%;
+  background: #ffffff;
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  color: var(--color-base);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+// *************************************************** Typography
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-brand);
+  line-height: 1.4;
+  color: var(--color-base);
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 26px;
+  color: var(--color-main-dark);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-main);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-main-alt);
+}
+
+.select {
+  width: 300px;
+  height: 300px;
+  color: var(--color-main-dark);
+}
+
+.salonCard {
+  color: var(--color-main-dark);
+}
+
+// *************************************************** Media queries
+
+//$grid-breakpoints: (
+//  'xl': 1366px,
+//  'lg': 1200px,
+//  'md': 992px,
+//  'sm': 768px,
+//  'xs': 576px,
+//);
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+}
+
+// *************************************************** List reset
+
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.list-reset {
+  @include list-reset();
+}
+
+// *************************************************** JUNK
+
+button {
+  background-color: #ffffff;
+  border: 10px;
+  border-radius: 0.5rem;
+  margin: 3px;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-navbar .MuiButtonBase-root {
+  background: var(--color-main-alt);
+}
+
+.create-salon-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 100%;
+  margin: 20px;
+  margin-left: 0px;
+  padding: 10px;
+}
+
+.display-profile-picture {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}

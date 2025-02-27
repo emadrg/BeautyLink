@@ -1,0 +1,44 @@
+.map-salon-details {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.reviews {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 380px;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  overflow-y: scroll;
+}
+
+.salon-details {
+  display: flex;
+  margin-top: 60px;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.service-stylists {
+  display: flex;
+}
+
+.reviews-contents {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.single-review {
+  height: auto;
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Aplicatie ACADEMIE",
+  "login": {
+    "title": "Pagina autentificare",
+    "emailLabel": "Email",
+    "passwordLabel": "Parola",
+    "loginButton": "Autentificare"
+  },
+  "register": {
+    "title": "Pagina inregistrare",
+    "emailLabel": "Email",
+    "passwordLabel": "Parola",
+    "registerButton": "Inregistrare"
+  },
+  "notFound": {
+    "title0": "Pagina ",
+    "title1": " nu a fost gasită.",
+    "backLink": "Vă puteți întoarce la",
+    "backLinkText": "Pagina Principală"
+  }
+}

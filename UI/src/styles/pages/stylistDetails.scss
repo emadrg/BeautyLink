@@ -1,0 +1,247 @@
+.map-salon-details {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.reviews {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 380px;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.stylist-details {
+  display: flex;
+  margin-top: 60px;
+}
+
+.service-list {
+  display: flex;
+}
+
+.service-stylists {
+  display: flex;
+}
+
+.reviews-contents {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.single-review {
+  height: auto;
+}
+
+.stylist-info {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 380px;
+  height: 200px;
+  margin: 20px;
+  margin-left: 100px;
+  padding: 20px;
+}
+
+.reviews-and-info {
+  margin-top: 105px;
+  display: block;
+}
+
+.display-or-update-review {
+  margin-top: 50px;
+  width: 380px;
+  height: 200px;
+}
+
+.review-text-field {
+  width: 360px;
+  height: auto;
+}
+
+.leave-review-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 880px;
+  height: auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.leave-review-container-contents {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  color: rgba(0, 0, 0, 0.87);
+  box-sizing: border-box;
+  position: relative;
+  cursor: text;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 0 5px;
+  position: relative;
+  border-radius: 4px;
+  padding: 16.5px 14px;
+  width: 800px;
+}
+
+.service-app {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.service-options {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 16px;
+}
+
+.service-details {
+  font-size: small;
+}
+
+.service-name {
+  color: var(--color-main-alt);
+}
+
+.confirm-button {
+  background-color: var(--color-main-dark);
+  color: white;
+}
+
+.confirm-button:hover {
+  background-color: white;
+  color: var(--color-main-alt);
+}
+
+.total-price {
+  padding: 5px;
+}
+
+.full-calendar {
+  margin-top: 80px;
+}
+
+.single-review-review-page {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 380px;
+  height: 200px;
+  margin: 20px;
+  margin-left: 0px;
+  padding: 20px;
+}
+
+.stylist-all-reviews {
+  display: flex;
+}
+
+.stylist-left-reviews {
+  margin-right: 50px;
+}
+
+.stylist-received-reviews {
+  margin-right: 50px;
+}
+
+.stylist-card-for-manager {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 250px;
+  height: 100px;
+  margin: 20px;
+  margin-left: 100px;
+  padding: 20px;
+  display: flex;
+}
+
+.stylist-card-for-manager:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stylists-for-manager {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+}
+
+.time-pick-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 300px;
+  height: 350px;
+  margin: 50px;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.schedule-buttons {
+  margin-top: 50px;
+}
+
+.stylist-card-for-manager-name {
+  width: 60%;
+  overflow-x: hidden;
+}
+
+.schedule-buttons-set-free-day {
+  width: 150px;
+  margin-left: 1px;
+}
+
+.schedule-buttons-set-submit {
+  margin-left: 20px;
+}
+
+.schedule-buttons-set-free-day:hover button {
+  background-color: rgb(249, 250, 251);
+}
+
+.schedule-buttons-set-submit:hover button {
+  background-color: rgb(249, 250, 251);
+}

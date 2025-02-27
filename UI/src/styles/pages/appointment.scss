@@ -1,0 +1,89 @@
+.service-app {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: auto;
+  height: auto;
+}
+
+.appointment-details {
+  font-size: large;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 380px;
+  height: 200px;
+  padding: 100px;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  margin-top: 180px;
+}
+
+.stylist-and-appointment-details {
+  display: flex;
+}
+
+.client-name-button {
+  border: 0px;
+  box-shadow: none;
+}
+.client-name-button:hover {
+  color: pink;
+}
+
+.accept-button:hover {
+  color: green;
+}
+
+.deny-button:hover {
+  color: red;
+}
+
+.appointment-grid {
+  gap: 16px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.all-appointment-details {
+  font-size: large;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 380px;
+  height: 200px;
+  padding: 50px;
+}
+
+.all-appointment-details:hover {
+  transform: translateY(-5px);
+}
+
+.stylist-card-for-filter {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 380px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.stylist-card-for-manager-name:hover {
+  transform: translateY(-2px);
+}
+
+.all-returned-stylists {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

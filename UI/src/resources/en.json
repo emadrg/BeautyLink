@@ -1,0 +1,45 @@
+{
+  "title": "Register",
+  "login": {
+    "title": "Login",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "loginButton": "Login"
+  },
+  "register": {
+    "title": "Register page",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "roleIdLabel": "RoleId",
+    "firstNameLabel": "First Name",
+    "lastNameLabel": "Last Name",
+    "profilePictureId": "Profile Picture",
+    "phoneNumber": "Phone Number",
+    "registerButton": "Register",
+    "roleLabel": "Role",
+    "salonLabel": "Salon"
+  },
+  "notFound": {
+    "title0": "Page ",
+    "title1": " was not found.",
+    "backLink": "You can return to:",
+    "backLinkText": "Home"
+  },
+  "allSalons": {
+    "title": "All salons:"
+  },
+  "salonListItem": {
+    "salonLabel": "Salon",
+    "addressLabel": "At address",
+    "learnMoreLabel": "Learn More"
+  },
+  "stylist": {
+    "title": "Stylist Details"
+  },
+  "appointment": {
+    "price": "Price: ",
+    "currencyRON": " RON",
+    "duration": "Time: ",
+    "minutes": "minutes"
+  }
+}

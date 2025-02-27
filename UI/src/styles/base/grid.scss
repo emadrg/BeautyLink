@@ -1,0 +1,93 @@
+@use 'sass:math';
+
+// Grid Breakpoints
+$grid-breakpoints: (
+  'xl': 1366px,
+  'lg': 1200px,
+  'md': 992px,
+  'sm': 768px,
+  'xs': 576px,
+);
+
+// Grid Variables
+$grid-columns: 12;
+$grid-gutter: 0;
+$default-column: 'default';
+$grid-desktop-first: true; // true = desktop-first / false = mobile-first
+$grid-media-query: 'max-width'; // !DON'T CHANGE THIS VARIABLE!
+
+// Grid Layout
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block-start: -1 * $grid-gutter;
+  margin-inline: -0.5 * $grid-gutter;
+
+  > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 0.5 * $grid-gutter;
+    margin-block-start: $grid-gutter;
+  }
+}
+
+.col {
+  flex: 1 0 0%;
+  max-width: 100%;
+}
+
+@mixin make-grid($currentBreakPoint) {
+  @for $cols from 1 through $grid-columns {
+    $curW: math.div(100%, $grid-columns) * $cols;
+
+    @each $breakpoint, $px in $grid-breakpoints {
+      @if $currentBreakPoint == $breakpoint {
+        $bpClass: #{'-' + $breakpoint};
+        @if $breakpoint == $default-column {
+          $bpClass: '';
+        }
+
+        .col#{$bpClass}-#{$cols} {
+          width: $curW;
+          flex-basis: $curW;
+        }
+      }
+    }
+  }
+}
+
+@function reorder-breakpoints($grid-breakpoints) {
+  $new-breakpoints: ();
+  @each $bk-name, $bk-px in $grid-breakpoints {
+    $new-breakpoints: map-merge(
+      (
+        $bk-name: $bk-px,
+      ),
+      $new-breakpoints
+    );
+  }
+  @return $new-breakpoints;
+}
+
+@if ($grid-desktop-first == false) {
+  $grid-breakpoints: reorder-breakpoints($grid-breakpoints);
+  $grid-media-query: 'min-width';
+}
+
+$grid-breakpoints: map-merge(
+  (
+    $default-column: 0,
+  ),
+  $grid-breakpoints
+);
+
+@each $breakpoint, $px in $grid-breakpoints {
+  @if $breakpoint != $default-column {
+    @media (#{$grid-media-query}: $px) {
+      @include make-grid($breakpoint);
+    }
+  } @else {
+    @include make-grid($default-column);
+  }
+}

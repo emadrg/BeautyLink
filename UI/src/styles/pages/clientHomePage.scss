@@ -1,0 +1,73 @@
+.salon-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 380px;
+  height: 200px;
+  margin: 20px;
+}
+
+.salon-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.salon-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.salon-card-text {
+  padding: 16px;
+}
+
+.salon-card-media {
+  width: 200px;
+  height: 180px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.salon-card-reviews {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.salon-list {
+  gap: 16px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.salon-list-all-salons {
+  gap: 16px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.salon-suggestions {
+  display: flex;
+}
+
+.dropdown-homepage-client {
+  display: flex;
+  margin: 8px;
+}
+
+.client-homepage {
+  display: flex;
+}
+
+.map {
+  margin-top: 300px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 50px;
+}
