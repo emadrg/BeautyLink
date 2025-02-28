@@ -1,51 +1,62 @@
-# Baza de date
-Sql Server 2019
-## Tabele de Baza
-- Logs
-    - pentru logare de erori care apar in aplicatie
-    - PK Id int cu identity
-    - FK la User Id
-    - LogLevel tinyint reprezentand enum-ul Microsoft.Extensions.Logging.LogLevel
-- Roles
-    - autorizare bazata pe roluri
-    - ar trebui sa fie echivalentul enum-ului de Common.Enums.Roles din cod
-    - se presupune ca admin-ul nu poate crea roluri noi
-- Users
-    - PK Id uniqueidentifier
-    - coloane de audit CreatedBy, CreatedDate, LastModifiedBy, LastModifiedDate
-    - IsActive pentru soft delete 
-    - FK RoleId catre Id-ul din Roles
-    - se presupune ca a admin-ul poate adauga utilizatori noi si asigna roluri diferite fata de cel initial
-    - Parola stocata ca string (criptata si encodata Base64 in Backend)
-# Backend
-REST API cu .Net 8
-## DA
-- EF Core 8
-- Contextul si Entitatile sunt in acelasi proiect dar foldere separate
-- DB first
-- se poate utiliza EF core power tools
-## BL
-- Repository pattern & UnitOfWork
-- AsNoTracking by default
-- Automapper pentru mapari intre DTO si entitati
-- mapper-ele stau in proiectul de DTOs pentru a se putea face maparea in orice parte a aplicatiei
-- interpretare QueryDTO
-- implementare Logger generic
-- cryptare parola cu argon2 si verificare egalitate parole
-- fisiere de resurse
-## API
-- Swagger generat automat
-- Controllere de MVC (not Open API)
-- autentificare si autorizare JWT (OAuth2 basic)
-- DI pentru CurrentUser
-- CORS doar pentru aplicatia de UI
-- LoggerMiddleware
-- Validator custom, cu atribut si verificari inainte de executarea actiunii
-- Atribut verificare Role
-- wrapper raspunsuri HTTP RESTful
-# Frontend
-Vite + React + Javascript
-- integrare enpoints API
-- layout autentificat vs anonym (vs admin)
-- wrapper request-uri pentru tratare erori & autentificare
-- utilitare pentru utilizarea modelului de Query din API
+# **Beauty Appointment Web Application**
+
+## **Overview**
+This application represents my learning journey in .NET web development. It is a web-based system designed to facilitate beauty appointments by connecting clients, managers, and stylists.
+
+The application has three roles:
+- **Client**: Books beauty appointments with a stylist, ensuring no scheduling conflicts. Clients can also view past and future appointments and leave reviews.
+- **Stylist**: Manages their schedule by viewing, accepting, or rejecting appointments.
+- **Manager**: Oversees stylists' reviews and timetables within the salon.
+
+## **Technologies Used**
+
+### **Database: SQL Server 2019**
+- The database includes **Logs**, **Roles**, and **Users** tables.
+- This is a **database-first project**, and the database schema is defined in `DatabaseScript.sql`.
+- The database follows **best practices** and **Normalization Forms** to ensure optimal structure.
+- I particularly enjoyed designing the database relationships, as it allowed me to apply my knowledge of **database normalization and relational modeling** effectively.
+
+### **Backend: REST API using .NET 8**
+- The backend is structured into **DA (Data Access), BL (Business Logic), API, DTOs (Data Transfer Objects), and UI (User Interface)**.
+- This structured approach ensures **maintainability, scalability, and readability** of the code.
+- The backend is implemented in **C#**, utilizing **HTTP requests** to link the user input with the database.
+- Initially, writing backend logic was a challenge, but as I worked through different controller methods, I became more comfortable with **.NET development and RESTful API principles**.
+
+### **Frontend: React, JavaScript, and CSS**
+- This was my **first experience with React**, and it was a learning curve transitioning from traditional HTML-based frontend development.
+- Once I grasped the **component-based approach** of React, development became **intuitive and enjoyable**.
+- **CSS** was used for styling, which was already familiar to me and helped bring the UI to life.
+
+## **Project Summary**
+This project serves as a testament to my **learning and growth** in **full-stack web development**. Unlike university coursework, where the scope is often limited, this project allowed me to **implement industry-standard practices** and **develop real-world functionalities**. I focused on writing **clean, structured, and maintainable code**, which I believe is essential for professional web development.
+
+---
+
+### **How to Run the Project**
+1. **Database Setup**
+   - Run `DatabaseScript.sql` on SQL Server 2019.
+   - Ensure the connection string is properly set in the backend configuration.
+
+2. **Backend Setup**
+   - Navigate to the backend directory.
+   - Run `dotnet restore` to install dependencies.
+   - Use `dotnet run` to start the API.
+
+3. **Frontend Setup**
+   - Navigate to the frontend directory.
+   - Run `npm install` to install dependencies.
+   - Use `npm start` to launch the React application.
+
+---
+
+### **Future Improvements**
+- Improve **stylist-client communication** by integrating a messaging system.
+- Add **automated testing** for both frontend and backend.
+
+---
+
+### **Final Thoughts**
+This project was an incredible learning experience that strengthened my understanding of **.NET, React, and SQL Server**. It challenged me to think like a professional developer, applying best practices in **database design, API development, and frontend architecture**.
+
+
+
